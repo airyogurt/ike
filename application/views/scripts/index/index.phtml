@@ -7,14 +7,14 @@
         border:2px solid green;
     }
 </style>
-<?php echo '<pre>';var_dump($this->test); ?>
+
 <table>
     <?php
 
-            if(isset($this->studenti)){
-                foreach($this->studenti as $student){
+            if(isset($this->test)){
+                foreach($this->test as $testUser){
                     ?>
-                    <tr class="row"><td class="cell"><?php echo $student['nume']; ?></td><td class="cell"><?php echo $student['varsta']; ?></td></tr>
+                    <tr class="row"><td class="cell"><?php echo $testUser->getId(); ?></td><td class="cell"><?php echo $testUser->getFirstname(); ?></td></tr>
             <?php
                 }
             }

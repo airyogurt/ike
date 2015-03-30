@@ -3,7 +3,7 @@
 class IndexController extends Zend_Controller_Action
 {
 
-    public function init()
+ /*   public function init()
     {
 
        $studenti = array(
@@ -24,14 +24,14 @@ class IndexController extends Zend_Controller_Action
        );
 
         $this->view->studenti = $studenti;
-    }
+    } */
 
     public function indexAction()
     {
         // action body
     }
 
-    public function indexfsdfsdfsdn()
+    public function danutFugeTareAction()
     {
         // action body
     }

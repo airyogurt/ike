@@ -1,26 +1,34 @@
-<style>
-    table{
-        border:3px dashed blue;
-    }
+<?php $this->headLink()->appendStylesheet('/media/css/navbar.css') ?>
+<?= $this->cssHelper() ?>
+<?php $this->headScript()->appendFile('/media/js/jQuery.js') ?>
+<?php $this->headScript()->appendFile('/media/js/underscore.js') ?>
+<?php $this->headScript()->appendFile('/media/js/backbone.js') ?>
+<?php $this->headScript()->appendFile('/media/js/landing.js') ?>
+<?= $this->headScript() ?>
 
-    .cell{
-        border:2px solid green;
-    }
-</style>
-bdfdgfdgfdg
-<table>
-    <?php
-
-            if(isset($this->studenti)){
-                foreach($this->studenti as $student){
-                    ?>
-                    <tr class="row"><td class="cell"><?php echo $student['nume']; ?></td><td class="cell"><?php echo $student['varsta']; ?></td></tr>
-            <?php
-                }
-            }
+<?php
+echo $this->render('partials/navbar.phtml'); ?>
 
 
-    ?>
 
-</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  var view = new testView();
+</script>
+
+
+
+
 

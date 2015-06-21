@@ -5,7 +5,6 @@ class IndexController extends Zend_Controller_Action
 
     public function init()
     {
-
        $studenti = array(
            array('nume' => 'Danut',
                   'varsta' => 21  ),
@@ -22,7 +21,6 @@ class IndexController extends Zend_Controller_Action
            array('nume' => 'Oliviu',
                'varsta' => 22  )
        );
-
         $this->view->studenti = $studenti;
     }
 
@@ -31,11 +29,9 @@ class IndexController extends Zend_Controller_Action
         // action body
     }
 
-    public function indexfsdfsdfsdn()
+    public function testasddfsd()
     {
         // action body
     }
-
-
 }
 
